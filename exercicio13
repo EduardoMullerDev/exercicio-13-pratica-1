@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class exercicio13 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        double altura;
+        double pesoidealH;
+        double pesoidealF;
+
+        System.out.print("sua altura:");
+        altura = teclado.nextDouble();
+
+        pesoidealH = Math.ceil(72.7 * altura) - 58;
+
+        pesoidealF = Math.ceil(62.1 * altura) - 44.7;
+
+        System.out.println("Peso ideal para homens:" + pesoidealH);
+        System.out.println("Peso ideal para mulheres:" + pesoidealF);
+
+    }
+
+}
